@@ -270,7 +270,7 @@ ul { list-style: none; }
 .hero-orb--1 {
   width: 800px;
   height: 800px;
-  background: rgba(242,169,0,0.25);
+  background: rgba(242,169,0,0.19);
   filter: blur(140px);
   top: -10%;
   right: -5%;
@@ -282,7 +282,7 @@ ul { list-style: none; }
 .hero-orb--2 {
   width: 550px;
   height: 550px;
-  background: rgba(120,170,255,0.30);
+  background: rgba(120,170,255,0.22);
   filter: blur(80px);
   bottom: -5%;
   left: 5%;
@@ -294,7 +294,7 @@ ul { list-style: none; }
 .hero-orb--3 {
   width: 350px;
   height: 350px;
-  background: rgba(242,169,0,0.40);
+  background: rgba(242,169,0,0.30);
   filter: blur(50px);
   top: 25%;
   left: 40%;
@@ -1127,6 +1127,36 @@ a.contact-value:hover {
   .team-card {
     min-width: unset;
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-orb--1 { animation-duration: 18s; }
+  .hero-orb--2 { animation-duration: 22s; }
+  .hero-orb--3 { animation-duration: 16s; }
+
+  @keyframes orbFloat1 {
+    0%   { transform: translateZ(-200px) translate3d(0, 0, 0) scale(1); }
+    25%  { transform: translateZ(-150px) translate3d(-50px, 30px, 15px) scale(1.08); }
+    50%  { transform: translateZ(-220px) translate3d(-25px, 50px, -10px) scale(0.95); }
+    75%  { transform: translateZ(-180px) translate3d(30px, 15px, 10px) scale(1.05); }
+    100% { transform: translateZ(-200px) translate3d(0, 0, 0) scale(1); }
+  }
+
+  @keyframes orbFloat2 {
+    0%   { transform: translateZ(-80px) translate3d(0, 0, 0) scale(1); }
+    25%  { transform: translateZ(-40px) translate3d(50px, -30px, 15px) scale(1.06); }
+    50%  { transform: translateZ(-120px) translate3d(60px, 20px, -12px) scale(0.94); }
+    75%  { transform: translateZ(-60px) translate3d(-20px, -25px, 10px) scale(1.04); }
+    100% { transform: translateZ(-80px) translate3d(0, 0, 0) scale(1); }
+  }
+
+  @keyframes orbFloat3 {
+    0%   { transform: translateZ(0px) translate3d(0, 0, 0) scale(1); }
+    25%  { transform: translateZ(30px) translate3d(35px, -35px, 12px) scale(1.1); }
+    50%  { transform: translateZ(-15px) translate3d(-30px, -20px, -8px) scale(0.9); }
+    75%  { transform: translateZ(20px) translate3d(-40px, 30px, 10px) scale(1.05); }
+    100% { transform: translateZ(0px) translate3d(0, 0, 0) scale(1); }
   }
 }
 
