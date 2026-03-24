@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emory Vision &amp; Graphics Lab</title>
+  <meta name="description" content="Emory Vision &amp; Graphics Lab — Modeling Beyond Visual Boundaries. Research in human performance capture, avatar modeling, neural rendering, and more." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=Open+Sans:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ─── NAVIGATION ─── -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-container">
+      <a href="#home" class="nav-logo">
+        <img src="assets/images/emory-shield.png" alt="Emory University" class="nav-shield" />
+        <span class="logo-text">Emory Vision &amp; Graphics Lab</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home"         class="nav-link" data-section="home">Home</a></li>
+        <li><a href="#news"         class="nav-link" data-section="news">News</a></li>
+        <li><a href="#team"         class="nav-link" data-section="team">Team</a></li>
+        <li><a href="#publications" class="nav-link" data-section="publications">Publications</a></li>
+        <li><a href="#research"     class="nav-link" data-section="research">Research</a></li>
+        <li><a href="#contact"      class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="home">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-orb hero-orb--1"></div>
+      <div class="hero-orb hero-orb--2"></div>
+      <div class="hero-orb hero-orb--3"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">
+        <span class="eyebrow-line" aria-hidden="true"></span>
+        <span>Department of Computer Science &nbsp;&middot;&nbsp; Emory University</span>
+      </p>
+      <h1 class="hero-title">Emory Vision<br />&amp; Graphics Lab</h1>
+      <p class="hero-tagline">Modeling Beyond Visual Boundaries</p>
+      <div class="hero-cta">
+        <a href="#research"     class="btn btn-primary">Our Research</a>
+        <a href="#publications" class="btn btn-outline">Publications</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── NEWS ─── -->
+  <section class="section news-section" id="news">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Latest Updates</span>
+        <h2 class="section-title">News</h2>
+      </div>
+      <div class="news-list">
+        <article class="news-item reveal">
+          <div class="news-date">
+            <span class="news-month">Jan</span>
+            <span class="news-year">2026</span>
+          </div>
+          <div class="news-body">
+            <p>Our paper "<strong>Feed-forward Human Performance Capture via Progressive Canonical Space Updates</strong>" has been accepted to <strong>ICLR 2026</strong>!</p>
+          </div>
+        </article>
+        <article class="news-item reveal">
+          <div class="news-date">
+            <span class="news-month">Sep</span>
+            <span class="news-year">2025</span>
+          </div>
+          <div class="news-body">
+            <p>Dr. <strong>Youngjoong Kwon</strong> joined Emory University CS as an assistant professor. Welcome to Emory!</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TEAM ─── -->
+  <section class="section team-section" id="team">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">People</span>
+        <h2 class="section-title">Team</h2>
+      </div>
+
+      <!-- Faculty -->
+      <div class="team-group reveal">
+        <h3 class="team-group-label">Faculty</h3>
+        <div class="team-grid team-grid--faculty">
+          <div class="team-card team-card--faculty">
+            <div class="team-avatar" aria-hidden="true">
+              <span class="avatar-initials">YK</span>
+            </div>
+            <div class="team-info">
+              <h4 class="team-name">Youngjoong Kwon</h4>
+              <p class="team-role">Assistant Professor</p>
+              <p class="team-dept">Department of Computer Science, Emory University</p>
+              <div class="team-links">
+                <a href="https://youngjoongunc.github.io/" target="_blank" rel="noopener" class="team-link">
+                  <i class="fa-solid fa-globe" aria-hidden="true"></i> Website
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PhD Students -->
+      <div class="team-group reveal">
+        <h3 class="team-group-label">PhD Students <span class="group-note">Starting Fall 2026</span></h3>
+        <div class="team-grid team-grid--students">
+          <div class="team-card">
+            <div class="team-avatar" aria-hidden="true">
+              <span class="avatar-initials">CK</span>
+            </div>
+            <div class="team-info">
+              <h4 class="team-name">Chanyoung Kim</h4>
+              <p class="team-role">PhD Student</p>
+              <div class="team-links">
+                <a href="https://kochanha.github.io/" target="_blank" rel="noopener" class="team-link">
+                  <i class="fa-solid fa-globe" aria-hidden="true"></i> Website
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar" aria-hidden="true">
+              <span class="avatar-initials">YX</span>
+            </div>
+            <div class="team-info">
+              <h4 class="team-name">Yilin Xu</h4>
+              <p class="team-role">PhD Student</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visiting Researcher -->
+      <div class="team-group reveal">
+        <h3 class="team-group-label">Visiting Researcher</h3>
+        <div class="team-grid team-grid--students">
+          <div class="team-card">
+            <div class="team-avatar" aria-hidden="true">
+              <span class="avatar-initials">DK</span>
+            </div>
+            <div class="team-info">
+              <h4 class="team-name">Donghyun Kim</h4>
+              <p class="team-role">Visiting Researcher</p>
+              <div class="team-links">
+                <a href="https://dannyboy0103.github.io/" target="_blank" rel="noopener" class="team-link">
+                  <i class="fa-solid fa-globe" aria-hidden="true"></i> Website
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Undergraduate Intern -->
+      <div class="team-group reveal">
+        <h3 class="team-group-label">Undergraduate Intern</h3>
+        <div class="team-grid team-grid--students">
+          <div class="team-card">
+            <div class="team-avatar" aria-hidden="true">
+              <span class="avatar-initials">MR</span>
+            </div>
+            <div class="team-info">
+              <h4 class="team-name">Max Roberts</h4>
+              <p class="team-role">Undergraduate Intern</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── PUBLICATIONS ─── -->
+  <section class="section publications-section" id="publications">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Selected Works</span>
+        <h2 class="section-title">Publications</h2>
+      </div>
+
+      <div class="pub-list">
+
+        <!-- 1 -->
+        <article class="pub-card reveal">
+          <div class="pub-thumb" aria-hidden="true">
+            <img src="https://youngjoongunc.github.io/papers/images/2025_monocular_human_performance_capture_gif.gif" alt="Feed-forward Human Performance Capture teaser" loading="lazy" />
+          </div>
+          <div class="pub-content">
+            <div class="pub-meta">
+              <span class="pub-venue pub-venue--iclr">ICLR 2026</span>
+            </div>
+            <h3 class="pub-title">Feed-forward Human Performance Capture via Progressive Canonical Space Updates</h3>
+            <p class="pub-authors"><strong>Youngjoong Kwon</strong>, Yao He, Heejung Choi, Chen Geng, Zhengmao Liu, Jiajun Wu, Ehsan Adeli</p>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article class="pub-card reveal">
+          <div class="pub-thumb" aria-hidden="true">
+            <img src="https://humansensinglab.github.io/GAS/assets/images/method_overview.png" alt="GAS teaser" loading="lazy" />
+          </div>
+          <div class="pub-content">
+            <div class="pub-meta">
+              <span class="pub-venue pub-venue--iccv">ICCV 2025</span>
+            </div>
+            <h3 class="pub-title">GAS: Generative Avatar Synthesis from a Single Image</h3>
+            <p class="pub-authors">Yixing Lu, Junting Dong, <strong>Youngjoong Kwon</strong>, Qin Zhao, Bo Dai, Fernando De la Torre</p>
+            <div class="pub-links">
+              <a href="https://humansensinglab.github.io/GAS/" target="_blank" rel="noopener" class="pub-link">
+                <i class="fa-solid fa-globe" aria-hidden="true"></i> Project
+              </a>
+              <a href="https://arxiv.org/pdf/2502.06957" target="_blank" rel="noopener" class="pub-link">
+                <i class="fa-regular fa-file-pdf" aria-hidden="true"></i> Paper
+              </a>
+              <a href="https://github.com/humansensinglab/GAS" target="_blank" rel="noopener" class="pub-link">
+                <i class="fa-brands fa-github" aria-hidden="true"></i> Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article class="pub-card reveal">
+          <div class="pub-thumb" aria-hidden="true">
+            <img src="https://humansensinglab.github.io/Generalizable-Human-Gaussians/assets/images/overview_png.png" alt="Generalizable Human Gaussians teaser" loading="lazy" />
+          </div>
+          <div class="pub-content">
+            <div class="pub-meta">
+              <span class="pub-venue pub-venue--eccv">ECCV 2024</span>
+            </div>
+            <h3 class="pub-title">Generalizable Human Gaussians for Sparse View Synthesis</h3>
+            <p class="pub-authors"><strong>Youngjoong Kwon</strong>, Baole Fang, Yixing Lu, Haoye Dong, Cheng Zhang, Francisco Vicente Carrasco, Albert Mosella-Montoro, Jianjin Xu, Shingo Takagi, Daeil Kim, Aayush Prakash, Fernando De la Torre</p>
+            <div class="pub-links">
+              <a href="https://humansensinglab.github.io/Generalizable-Human-Gaussians/" target="_blank" rel="noopener" class="pub-link">
+                <i class="fa-solid fa-globe" aria-hidden="true"></i> Project
+              </a>
+              <a href="https://arxiv.org/abs/2407.12777" target="_blank" rel="noopener" class="pub-link">
+                <i class="fa-regular fa-file-pdf" aria-hidden="true"></i> Paper
+              </a>
+              <a href="https://github.com/humansensinglab/Generalizable-Human-Gaussians" target="_blank" rel="noopener" class="pub-link">
+                <i class="fa-brands fa-github" aria-hidden="true"></i> Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="pub-card reveal">
+          <div class="pub-thumb" aria-hidden="true">
+            <img src="https://mcmvmc.github.io/PersonalTelepresence/teaser.png" alt="Telepresence teaser" loading="lazy" />
+          </div>
+          <div class="pub-content">
+            <div class="pub-meta">
+              <span class="pub-venue pub-venue--tvcg">TVCG 2024</span>
+            </div>
+            <h3 class="pub-title">Bringing Telepresence to Every Desk</h3>
+            <p class="pub-authors">Shengze Wang, Ziheng Wang, Ryan Schmelzle, Liuejie Zheng, <strong>Youngjoong Kwon</strong>, Soumyadip Sengupta, Henry Fuchs</p>
+            <div class="pub-links">
+              <a href="https://mcmvmc.github.io/PersonalTelepresence/" target="_blank" rel="noopener" class="pub-link">
+                <i class="fa-solid fa-globe" aria-hidden="true"></i> Project
+              </a>
+              <a href="https://mcmvmc.github.io/PersonalTelepresence/Bringing_Telepresence_to_Every_Desk__Arxiv_.pdf" target="_blank" rel="noopener" class="pub-link">
+                <i class="fa-regular fa-file-pdf" aria-hidden="true"></i> Paper
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5 -->
+        <article class="pub-card reveal">
+          <div class="pub-thumb" aria-hidden="true">
+            <img src="https://vcai.mpi-inf.mpg.de/projects/DELIFFAS/images/overview.png" alt="DELIFFAS teaser" loading="lazy" />
+          </div>
+          <div class="pub-content">
+            <div class="pub-meta">
+              <span class="pub-venue pub-venue--neurips">NeurIPS 2023</span>
+            </div>
+            <h3 class="pub-title">DELIFFAS: Deformable Light Fields for Fast Avatar Synthesis</h3>
+            <p class="pub-authors"><strong>Youngjoong Kwon</strong>, Lingjie Liu, Henry Fuchs, Marc Habermann, Christian Theobalt</p>
+            <div class="pub-links">
+              <a href="https://vcai.mpi-inf.mpg.de/projects/DELIFFAS" target="_blank" rel="noopener" class="pub-link">
+                <i class="fa-solid fa-globe" aria-hidden="true"></i> Project
+              </a>
+              <a href="https://arxiv.org/pdf/2310.11449.pdf" target="_blank" rel="noopener" class="pub-link">
+                <i class="fa-regular fa-file-pdf" aria-hidden="true"></i> Paper
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6 -->
+        <article class="pub-card reveal">
+          <div class="pub-thumb" aria-hidden="true">
+            <img src="https://youngjoongunc.github.io/nia/images/nia_overview.png" alt="NIA teaser" loading="lazy" />
+          </div>
+          <div class="pub-content">
+            <div class="pub-meta">
+              <span class="pub-venue pub-venue--iclr">ICLR 2023</span>
+            </div>
+            <h3 class="pub-title">Neural Image-based Avatars: Generalizable Radiance Fields for Human Avatar Modeling</h3>
+            <p class="pub-authors"><strong>Youngjoong Kwon</strong>, Dahun Kim, Duygu Ceylan, Henry Fuchs</p>
+            <div class="pub-links">
+              <a href="https://youngjoongunc.github.io/nia" target="_blank" rel="noopener" class="pub-link">
+                <i class="fa-solid fa-globe" aria-hidden="true"></i> Project
+              </a>
+              <a href="https://arxiv.org/abs/2304.04897" target="_blank" rel="noopener" class="pub-link">
+                <i class="fa-regular fa-file-pdf" aria-hidden="true"></i> Paper
+              </a>
+              <a href="https://github.com/YoungJoongUNC/Neural_Image_Based_Avatars" target="_blank" rel="noopener" class="pub-link">
+                <i class="fa-brands fa-github" aria-hidden="true"></i> Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7 -->
+        <article class="pub-card reveal">
+          <div class="pub-thumb" aria-hidden="true">
+            <img src="https://youngjoongunc.github.io/papers/images/2022_wacv.png" alt="Tailor Me teaser" loading="lazy" />
+          </div>
+          <div class="pub-content">
+            <div class="pub-meta">
+              <span class="pub-venue pub-venue--wacv">WACV 2022</span>
+            </div>
+            <h3 class="pub-title">Tailor Me: An Editing Network for Fashion Attribute Shape Manipulation</h3>
+            <p class="pub-authors"><strong>Youngjoong Kwon</strong>, Stefano Petrangeli, Dahun Kim, Haoliang Wang, Vishy Swaminathan, Henry Fuchs</p>
+          </div>
+        </article>
+
+        <!-- 8 -->
+        <article class="pub-card reveal">
+          <div class="pub-thumb" aria-hidden="true">
+            <img src="https://youngjoongunc.github.io/nhp/images/overview.png" alt="Neural Human Performer teaser" loading="lazy" />
+          </div>
+          <div class="pub-content">
+            <div class="pub-meta">
+              <span class="pub-venue pub-venue--neurips">NeurIPS 2021</span>
+              <span class="pub-badge">Spotlight</span>
+            </div>
+            <h3 class="pub-title">Neural Human Performer: Learning Generalizable Radiance Fields for Human Performance Rendering</h3>
+            <p class="pub-authors"><strong>Youngjoong Kwon</strong>, Dahun Kim, Duygu Ceylan, Henry Fuchs</p>
+            <div class="pub-links">
+              <a href="https://youngjoongunc.github.io/nhp" target="_blank" rel="noopener" class="pub-link">
+                <i class="fa-solid fa-globe" aria-hidden="true"></i> Project
+              </a>
+              <a href="https://arxiv.org/abs/2109.07448" target="_blank" rel="noopener" class="pub-link">
+                <i class="fa-regular fa-file-pdf" aria-hidden="true"></i> Paper
+              </a>
+              <a href="https://github.com/YoungJoongUNC/Neural_Human_Performer" target="_blank" rel="noopener" class="pub-link">
+                <i class="fa-brands fa-github" aria-hidden="true"></i> Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 9 -->
+        <article class="pub-card reveal">
+          <div class="pub-thumb" aria-hidden="true">
+            <img src="https://youngjoongunc.github.io/papers/images/2020_mm.png" alt="Rotationally-Consistent NVS teaser" loading="lazy" />
+          </div>
+          <div class="pub-content">
+            <div class="pub-meta">
+              <span class="pub-venue pub-venue--acm">ACM MM 2020</span>
+            </div>
+            <h3 class="pub-title">Rotationally-Consistent Novel View Synthesis for Humans</h3>
+            <p class="pub-authors"><strong>Youngjoong Kwon</strong>, Stefano Petrangeli, Dahun Kim, Haoliang Wang, Henry Fuchs, Vishy Swaminathan</p>
+            <div class="pub-links">
+              <a href="https://dl.acm.org/doi/10.1145/3394171.3413754" target="_blank" rel="noopener" class="pub-link">
+                <i class="fa-regular fa-file-pdf" aria-hidden="true"></i> Paper
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 10 -->
+        <article class="pub-card reveal">
+          <div class="pub-thumb" aria-hidden="true">
+            <img src="https://youngjoongunc.github.io/papers/images/2020.eccv.nvs.png" alt="ECCV 2020 NVS teaser" loading="lazy" />
+          </div>
+          <div class="pub-content">
+            <div class="pub-meta">
+              <span class="pub-venue pub-venue--eccv">ECCV 2020</span>
+              <span class="pub-badge">Spotlight</span>
+            </div>
+            <h3 class="pub-title">Rotationally-Temporally Consistent Novel-View Synthesis of Human Performance Video</h3>
+            <p class="pub-authors"><strong>Youngjoong Kwon</strong>, Stefano Petrangeli, Dahun Kim, Haoliang Wang, Eunbyung Park, Vishy Swaminathan, Henry Fuchs</p>
+            <div class="pub-links">
+              <a href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123490375.pdf" target="_blank" rel="noopener" class="pub-link">
+                <i class="fa-regular fa-file-pdf" aria-hidden="true"></i> Paper
+              </a>
+              <a href="https://github.com/YoungJoongUNC/human_video_novel_view_synthesis" target="_blank" rel="noopener" class="pub-link">
+                <i class="fa-brands fa-github" aria-hidden="true"></i> Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 11 -->
+        <article class="pub-card reveal">
+          <div class="pub-thumb" aria-hidden="true">
+            <img src="https://youngjoongunc.github.io/papers/images/2017_casa_rain.PNG" alt="Rain-wet Cloth teaser" loading="lazy" />
+          </div>
+          <div class="pub-content">
+            <div class="pub-meta">
+              <span class="pub-venue pub-venue--other">CASA 2017</span>
+            </div>
+            <h3 class="pub-title">Real-time Animation of Rain-wet Cloth Material</h3>
+            <p class="pub-authors"><strong>Youngjoong Kwon</strong>, Daeyong Kim, Inkwon Lee</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── RESEARCH ─── -->
+  <section class="section research-section" id="research">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Focus Areas</span>
+        <h2 class="section-title">Research</h2>
+      </div>
+
+      <div class="research-grid">
+
+        <div class="research-card reveal">
+          <div class="research-icon" aria-hidden="true">
+            <i class="fa-solid fa-person-running"></i>
+          </div>
+          <h3 class="research-title">Human Performance Capture</h3>
+          <p class="research-desc">Reconstructing detailed 3D human models from sparse camera setups with high fidelity and real-time performance.</p>
+        </div>
+
+        <div class="research-card reveal">
+          <div class="research-icon" aria-hidden="true">
+            <i class="fa-solid fa-user-astronaut"></i>
+          </div>
+          <h3 class="research-title">Avatar Modeling</h3>
+          <p class="research-desc">Creating photorealistic digital humans from minimal input — a single image to a fully rigged, animatable avatar.</p>
+        </div>
+
+        <div class="research-card reveal">
+          <div class="research-icon" aria-hidden="true">
+            <i class="fa-solid fa-cubes"></i>
+          </div>
+          <h3 class="research-title">Neural Rendering</h3>
+          <p class="research-desc">Combining neural networks with rendering techniques for photorealistic image and scene synthesis.</p>
+        </div>
+
+        <div class="research-card reveal">
+          <div class="research-icon" aria-hidden="true">
+            <i class="fa-solid fa-video"></i>
+          </div>
+          <h3 class="research-title">Telepresence</h3>
+          <p class="research-desc">Enabling immersive remote presence through real-time 3D capture for accessible, life-sized virtual collaboration.</p>
+        </div>
+
+        <div class="research-card reveal">
+          <div class="research-icon" aria-hidden="true">
+            <i class="fa-solid fa-earth-americas"></i>
+          </div>
+          <h3 class="research-title">World Foundation Models</h3>
+          <p class="research-desc">Building large-scale models for understanding and generating 3D worlds grounded in physical reality.</p>
+        </div>
+
+        <div class="research-card reveal">
+          <div class="research-icon" aria-hidden="true">
+            <i class="fa-solid fa-eye"></i>
+          </div>
+          <h3 class="research-title">Novel View Synthesis</h3>
+          <p class="research-desc">Generating new viewpoints of scenes from limited observations, generalizing across identities and environments.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Contact</h2>
+      </div>
+
+      <div class="contact-layout">
+
+        <div class="contact-info reveal">
+          <div class="contact-block">
+            <div class="contact-icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <h4 class="contact-label">Email</h4>
+              <a href="mailto:youngjoong.kwon@emory.edu" class="contact-value">youngjoong.kwon@emory.edu</a>
+            </div>
+          </div>
+
+          <div class="contact-block">
+            <div class="contact-icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4 class="contact-label">Office</h4>
+              <p class="contact-value">Goodrich C. White Hall 215<br />Emory University<br />301 Dowman Dr, Atlanta, GA 30322</p>
+            </div>
+          </div>
+
+          <div class="contact-block">
+            <div class="contact-icon" aria-hidden="true"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <h4 class="contact-label">Office Hours</h4>
+              <p class="contact-value">By appointment</p>
+            </div>
+          </div>
+
+          <div class="contact-note">
+            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+            <p>Prospective PhD candidates should include a <strong>brief statement of research interests</strong> and a <strong>CV</strong> in their email.</p>
+          </div>
+        </div>
+
+        <div class="contact-map reveal">
+          <div class="map-frame">
+            <iframe
+              title="Emory University map"
+              src="https://maps.google.com/maps?q=Goodrich+C+White+Hall+Emory+University+Atlanta+GA&output=embed&z=15"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-layout">
+        <div class="footer-brand">
+          <img src="assets/images/emory-shield.png" alt="Emory University" class="footer-shield" />
+          <div class="footer-brand-text">
+            <span class="footer-lab-name">Emory Vision &amp; Graphics Lab</span>
+            <span class="footer-dept">Department of Computer Science, Emory University</span>
+          </div>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="#home">Home</a>
+          <a href="#news">News</a>
+          <a href="#team">Team</a>
+          <a href="#publications">Publications</a>
+          <a href="#research">Research</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <p class="footer-copy">&copy; 2025 Emory Vision &amp; Graphics Lab. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
