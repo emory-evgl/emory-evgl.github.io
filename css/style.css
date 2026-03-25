@@ -362,7 +362,9 @@ ul { list-style: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero-orb { animation: none; }
+  .hero-orb--1 { animation-duration: 45s; }
+  .hero-orb--2 { animation-duration: 36s; }
+  .hero-orb--3 { animation-duration: 27s; }
 }
 
 .hero::after {
@@ -601,6 +603,7 @@ ul { list-style: none; }
 }
 
 .team-card {
+  position: relative;
   display: flex;
   align-items: flex-start;
   gap: 16px;
@@ -610,6 +613,20 @@ ul { list-style: none; }
   padding: 20px 22px;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
   min-width: 240px;
+}
+.team-cohort {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--emory-blue);
+  background: rgba(1,33,105,0.07);
+  padding: 3px 10px;
+  border-radius: 0 var(--radius-md) 0 var(--radius-md);
+  line-height: 1.6;
 }
 .team-card:hover {
   border-color: rgba(1,33,105,0.22);
