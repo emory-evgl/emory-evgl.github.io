@@ -280,7 +280,7 @@ ul { list-style: none; }
   top: -10%;
   right: -5%;
   transform: translateZ(-200px) scale(1);
-  animation: orbFloat1 10s ease-in-out infinite;
+  animation: orbFloat1 15s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
 }
 
 /* Layer 2: Middle — medium blur, medium speed */
@@ -292,7 +292,7 @@ ul { list-style: none; }
   bottom: -5%;
   left: 5%;
   transform: translateZ(-80px) scale(1);
-  animation: orbFloat2 7s ease-in-out infinite;
+  animation: orbFloat2 12s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
 }
 
 /* Layer 3: Front — sharper, brighter, faster */
@@ -304,30 +304,43 @@ ul { list-style: none; }
   top: 25%;
   left: 40%;
   transform: translateZ(0px) scale(1);
-  animation: orbFloat3 5s ease-in-out infinite;
+  animation: orbFloat3 9s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
 }
 
+/* Orb 1: 넓은 타원 궤도 — 느리게 크게 순회 */
 @keyframes orbFloat1 {
   0%   { transform: translateZ(-200px) translate3d(0, 0, 0) scale(1); }
-  25%  { transform: translateZ(-150px) translate3d(-180px, 80px, 40px) scale(1.15); }
-  50%  { transform: translateZ(-220px) translate3d(-80px, 160px, -30px) scale(0.9); }
-  75%  { transform: translateZ(-180px) translate3d(100px, 40px, 20px) scale(1.1); }
+  12%  { transform: translateZ(-180px) translate3d(-60px, 50px, 15px) scale(1.03); }
+  28%  { transform: translateZ(-160px) translate3d(-150px, 110px, 30px) scale(1.06); }
+  42%  { transform: translateZ(-190px) translate3d(-120px, 160px, 10px) scale(1.02); }
+  58%  { transform: translateZ(-220px) translate3d(-20px, 120px, -15px) scale(0.96); }
+  72%  { transform: translateZ(-200px) translate3d(70px, 60px, 10px) scale(1.04); }
+  88%  { transform: translateZ(-185px) translate3d(40px, 15px, 5px) scale(1.01); }
   100% { transform: translateZ(-200px) translate3d(0, 0, 0) scale(1); }
 }
 
+/* Orb 2: 8자 형태 — 좌우로 넘나들며 상하 교차 */
 @keyframes orbFloat2 {
   0%   { transform: translateZ(-80px) translate3d(0, 0, 0) scale(1); }
-  25%  { transform: translateZ(-40px) translate3d(160px, -100px, 50px) scale(1.12); }
-  50%  { transform: translateZ(-120px) translate3d(200px, 60px, -40px) scale(0.88); }
-  75%  { transform: translateZ(-60px) translate3d(-60px, -80px, 30px) scale(1.08); }
+  14%  { transform: translateZ(-55px) translate3d(100px, -40px, 25px) scale(1.05); }
+  30%  { transform: translateZ(-45px) translate3d(140px, 30px, 35px) scale(1.03); }
+  46%  { transform: translateZ(-70px) translate3d(60px, 70px, 10px) scale(0.97); }
+  54%  { transform: translateZ(-90px) translate3d(-40px, 50px, -10px) scale(0.95); }
+  70%  { transform: translateZ(-100px) translate3d(-110px, -20px, -25px) scale(1.02); }
+  86%  { transform: translateZ(-85px) translate3d(-50px, -40px, -5px) scale(1.04); }
   100% { transform: translateZ(-80px) translate3d(0, 0, 0) scale(1); }
 }
 
+/* Orb 3: 불규칙 드리프트 — 짧게 멈췄다 방향 전환 */
 @keyframes orbFloat3 {
   0%   { transform: translateZ(0px) translate3d(0, 0, 0) scale(1); }
-  25%  { transform: translateZ(60px) translate3d(120px, -120px, 40px) scale(1.18); }
-  50%  { transform: translateZ(-30px) translate3d(-100px, -60px, -20px) scale(0.85); }
-  75%  { transform: translateZ(40px) translate3d(-140px, 100px, 30px) scale(1.1); }
+  10%  { transform: translateZ(15px) translate3d(40px, -30px, 10px) scale(1.04); }
+  25%  { transform: translateZ(35px) translate3d(90px, -80px, 25px) scale(1.07); }
+  38%  { transform: translateZ(30px) translate3d(85px, -75px, 20px) scale(1.06); }
+  52%  { transform: translateZ(-5px) translate3d(10px, -50px, -5px) scale(0.96); }
+  65%  { transform: translateZ(-15px) translate3d(-60px, 20px, -15px) scale(0.94); }
+  80%  { transform: translateZ(10px) translate3d(-80px, 50px, 10px) scale(1.03); }
+  92%  { transform: translateZ(5px) translate3d(-30px, 20px, 5px) scale(1.01); }
   100% { transform: translateZ(0px) translate3d(0, 0, 0) scale(1); }
 }
 
@@ -1171,27 +1184,40 @@ a.contact-value:hover {
     animation-duration: 26s;
   }
 
+  /* Orb 1: 넓은 타원 — 모바일 축소 */
   @keyframes orbFloat1 {
     0%   { transform: translate3d(0, 0, 0) scale(1); }
-    25%  { transform: translate3d(-25px, 15px, 0) scale(1.04); }
-    50%  { transform: translate3d(-10px, 30px, 0) scale(0.97); }
-    75%  { transform: translate3d(15px, 8px, 0) scale(1.02); }
+    12%  { transform: translate3d(-8px, 6px, 0) scale(1.01); }
+    28%  { transform: translate3d(-18px, 14px, 0) scale(1.03); }
+    42%  { transform: translate3d(-15px, 20px, 0) scale(1.01); }
+    58%  { transform: translate3d(-3px, 15px, 0) scale(0.98); }
+    72%  { transform: translate3d(8px, 8px, 0) scale(1.02); }
+    88%  { transform: translate3d(5px, 2px, 0) scale(1.005); }
     100% { transform: translate3d(0, 0, 0) scale(1); }
   }
 
+  /* Orb 2: 8자 교차 — 모바일 축소 */
   @keyframes orbFloat2 {
     0%   { transform: translate3d(0, 0, 0) scale(1); }
-    25%  { transform: translate3d(25px, -15px, 0) scale(1.03); }
-    50%  { transform: translate3d(30px, 10px, 0) scale(0.97); }
-    75%  { transform: translate3d(-10px, -12px, 0) scale(1.02); }
+    14%  { transform: translate3d(12px, -5px, 0) scale(1.02); }
+    30%  { transform: translate3d(18px, 4px, 0) scale(1.01); }
+    46%  { transform: translate3d(8px, 9px, 0) scale(0.98); }
+    54%  { transform: translate3d(-5px, 6px, 0) scale(0.97); }
+    70%  { transform: translate3d(-14px, -3px, 0) scale(1.01); }
+    86%  { transform: translate3d(-6px, -5px, 0) scale(1.02); }
     100% { transform: translate3d(0, 0, 0) scale(1); }
   }
 
+  /* Orb 3: 불규칙 드리프트 — 모바일 축소 */
   @keyframes orbFloat3 {
     0%   { transform: translate3d(0, 0, 0) scale(1); }
-    25%  { transform: translate3d(18px, -18px, 0) scale(1.05); }
-    50%  { transform: translate3d(-15px, -10px, 0) scale(0.95); }
-    75%  { transform: translate3d(-20px, 15px, 0) scale(1.03); }
+    10%  { transform: translate3d(5px, -4px, 0) scale(1.02); }
+    25%  { transform: translate3d(12px, -10px, 0) scale(1.03); }
+    38%  { transform: translate3d(11px, -9px, 0) scale(1.03); }
+    52%  { transform: translate3d(2px, -6px, 0) scale(0.98); }
+    65%  { transform: translate3d(-8px, 3px, 0) scale(0.97); }
+    80%  { transform: translate3d(-10px, 6px, 0) scale(1.01); }
+    92%  { transform: translate3d(-4px, 2px, 0) scale(1.005); }
     100% { transform: translate3d(0, 0, 0) scale(1); }
   }
 }
