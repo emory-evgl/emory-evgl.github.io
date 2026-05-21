@@ -33,6 +33,7 @@
   --venue-tvcg:      #c81e1e;
   --venue-wacv:      #057a55;
   --venue-acm:       #1c64f2;
+  --venue-cvpr:      #4f46e5;
   --venue-other:     #6b7280;
 
   --nav-height:      68px;
@@ -794,6 +795,7 @@ ul { list-style: none; }
 .pub-venue--tvcg    { background: var(--venue-tvcg); }
 .pub-venue--wacv    { background: var(--venue-wacv); }
 .pub-venue--acm     { background: var(--venue-acm); }
+.pub-venue--cvpr    { background: var(--venue-cvpr); }
 .pub-venue--other   { background: var(--venue-other); }
 
 .pub-badge {
@@ -826,6 +828,14 @@ ul { list-style: none; }
   font-size: 13.5px;
   color: var(--text-muted);
   line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.pub-venue-sub {
+  font-size: 12.5px;
+  font-style: italic;
+  color: var(--text-muted);
+  margin-top: -8px;
   margin-bottom: 12px;
 }
 
