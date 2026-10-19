@@ -744,13 +744,15 @@ ul { list-style: none; }
   background: var(--bg-light);
   border: 1px solid var(--border-light);
 }
-.pub-thumb img {
+.pub-thumb img,
+.pub-thumb video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
-.pub-card:hover .pub-thumb img {
+.pub-card:hover .pub-thumb img,
+.pub-card:hover .pub-thumb video {
   transform: scale(1.04);
 }
 .pub-thumb-placeholder {
